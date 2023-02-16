@@ -7,7 +7,6 @@ function Battleground({encounter, handleEncounterChange}) {
     const [initiator, setInitiator] = useState(0)
     const [target, setTarget] = useState(0)
     const [playerAttacking, setPlayerAttacking] = useState(false)
-    // const [targetSelected, setTargetSelected] = useState(false)
 
     const onAttackSubmit = () => {
         const config = {
