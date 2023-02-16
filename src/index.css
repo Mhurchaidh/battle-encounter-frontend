@@ -18,12 +18,10 @@ code {
   width: 70vw;
   height: max-content;
   min-height: max-content;
-  margin-top: 10vh;
   text-align: center;
   font-size: 20px;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 40vh;
 }
 
 .enemyParty {
@@ -94,6 +92,7 @@ code {
 }
 
 .battleLog {
-  margin-left: 10vw;
-  margin-top: 8vh;
+  overflow: scroll;
+  height: 50vh;
+  width: 50vw;
 }

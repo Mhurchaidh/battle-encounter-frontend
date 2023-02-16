@@ -13,9 +13,9 @@ function CharacterDetails({character, setInitiator, setPlayerAttacking, playerAt
     return (
         <div className={`friendly-${character.character_class}`} >
             {character.name} - {character.character_class}
-            <p>{character.mag_attack !== 0 ? `Mag:${character.mag_attack}` : `Phys: ${character.phys_attack}`}</p>
+            <p>{`HP: ${character.health}/${character.max_health}`}</p>
+            <p>{character.mag_attack !== 0 ? `Mag: ${character.mag_attack}` : `Phys: ${character.phys_attack}`}</p>
             {playerAttacking ? <button onClick={handleAttackCancel}>Cancel</button> : <button onClick={handleCharacter}>Attack</button>}
-            
         </div>
     )
 }
