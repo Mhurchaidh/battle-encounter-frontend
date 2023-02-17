@@ -7,7 +7,6 @@ function Battleground() {
     const [initiator, setInitiator] = useState(0)
     const [target, setTarget] = useState(0)
     const [playerAttacking, setPlayerAttacking] = useState(false)
-    //const [encounter, setEncounter] = useState({})
     const [battlegrounds, setBattlegrounds] = useState([])
     const [characters, setCharacters] = useState([])
     const [enemies, setEnemies] = useState([])
@@ -53,7 +52,7 @@ function Battleground() {
     }
     
     const handleBattleReset = () => {
-        fetch('http://localhost:9292/battlegrounds/all', {method: "DELETE"})
+        fetch('http://localhost:9292/battleground/all', {method: "DELETE"})
         .then(resp => resp.json())
         .then(resp => {
             setBattlegrounds(resp.battlegrounds)
