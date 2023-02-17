@@ -1,16 +1,3 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
 .party {
   display: flex;
   flex-direction: row;
@@ -95,4 +82,9 @@ code {
   overflow: scroll;
   height: 50vh;
   width: 50vw;
+}
+
+.middlefield {
+  display: flex;
+  flex-direction: row;
 }
